@@ -1,11 +1,13 @@
 
 .contactContainer{
-    width:80%;
+    width:75%;
     border-radius: 20px;
     overflow: hidden;
     padding:10px;
     display: flex;
     background:white;
+    border: 1px solid(green)
+
 }
 .contactInfo{
     background: lightblue;
@@ -17,7 +19,31 @@
     flex-direction: column;
 }
 .h3{
-    font-size: 2rem;
+    font-size: 4rem;
     font-weight: 500;
     margin:0;
+}
+.socialMedia{
+    display: flex;
+    width: 50%;
+    justify-content: space-between;
+}
+.icon{
+    flex: 1 1 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height:40px;
+    border-radius: 50%;
+    
+    transition: .3 all ease-in-out;
+}
+.icon:hover{
+    background: aqua;
+    transition: .3 all ease-in-out;
+}
+
+.fa{
+    font-size: 25px;
+    color:white;
 }
