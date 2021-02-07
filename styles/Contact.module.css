@@ -1,0 +1,23 @@
+
+.contactContainer{
+    width:80%;
+    border-radius: 20px;
+    overflow: hidden;
+    padding:10px;
+    display: flex;
+    background:white;
+}
+.contactInfo{
+    background: lightblue;
+    border-radius: 15px;
+    flex: 0 1 40%;
+    padding:40px;
+    color: white;
+    display: flex;
+    flex-direction: column;
+}
+.h3{
+    font-size: 2rem;
+    font-weight: 500;
+    margin:0;
+}
