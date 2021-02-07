@@ -1,8 +1,13 @@
+import ContactForm from "../components/ContactForm"
+
 const Contact = () => {
+   
     return(
-        <>
-        <h1>This is the Contact page</h1>
-        </>
+        <div>
+        <h1>Get in touch!</h1>
+        
+        <ContactForm/>
+        </div>
         )
 };
 

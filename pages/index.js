@@ -9,13 +9,14 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
       <main>
-        <h1>Home</h1>
+        <h1>Greeting,</h1>
+        <h1>My</h1>
+        <h1>Name</h1>
+        <h1>Is</h1>
+        <h1>Sam</h1>
       </main>
 
-      <footer className={styles.footer}>
-        <>
-        </>
-      </footer>
+
     </div>
   )
 }
