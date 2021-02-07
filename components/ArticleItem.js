@@ -5,7 +5,7 @@ import styles from '../styles/Article.module.css'
 
 const ArticleItem = ({article, object_key}) => {
     return (
-        <Link href="/article/[id]" as={`/article/${article.id}`}>
+        <Link href={article.link.toString()} passHref={true}>
             <a className={styles.card}>
                 <h3 key={object_key}>{article.title} &rarr;</h3>
                 
