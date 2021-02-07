@@ -8,7 +8,11 @@ const ArticleItem = ({article, object_key}) => {
         <Link href={article.link.toString()} passHref={true}>
             <a className={styles.card}>
                 <h3 key={object_key}>{article.title} &rarr;</h3>
-                
+                <Image src={article.thumbnail.toString()}
+                  alt="article image"
+                  height={500}
+                  width={500}
+                    />
             </a>
         </Link>
     )
