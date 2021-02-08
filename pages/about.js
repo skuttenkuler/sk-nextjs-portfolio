@@ -1,12 +1,13 @@
-
+import HomeButton from '../components/HomeButton'
 import styles from '../styles/About.module.css'
 const About = () => {
     return(
         <div>
+            <HomeButton/>
             <div className={styles.header}>
                 <h1>I am a Full Stack Engineer.</h1>
             </div>
-            {/* Image maybe? */}
+            
             
             <div className={styles.aboutContainer}>
                 <h3>About</h3>
@@ -20,7 +21,8 @@ const About = () => {
                 </p>
             </div>
         </div>
-            
+    
+    )       
 };
 
 export default About;
