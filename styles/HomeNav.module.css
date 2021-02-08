@@ -1,0 +1,10 @@
+.navContainer{
+    height:100%;
+    width:75%;
+    border-radius: 20px;
+    padding:10px;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+
+}
