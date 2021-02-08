@@ -3,7 +3,7 @@ import Link from 'next/link'
 import styles from '../../../styles/NavLink.module.css'
 
 const ResumeLink = () => {
-    const [text, setText] = useState("Sam");
+    const [text, setText] = useState("SAM");
 
     const resumeLinkText = (text) => {
         console.log("switched")
@@ -11,7 +11,7 @@ const ResumeLink = () => {
     }
     return(
   
-            <div className={styles.navItem}onMouseEnter={() => resumeLinkText("RESUME") } onMouseLeave={() => resumeLinkText("Sam")}>
+            <div className={styles.navItem}onMouseEnter={() => resumeLinkText("RESUME") } onMouseLeave={() => resumeLinkText("SAM")}>
                 <Link href="/blog">{text}</Link>
             </div>
     )
