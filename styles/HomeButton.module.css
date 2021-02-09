@@ -1,6 +1,9 @@
 .homeButton{
-    position: absolute;
+    position: fixed;
     right: 25px;
     top:25px;
     color:white;
+    font-size: 2vw;
+    z-index: 999;
 }
+

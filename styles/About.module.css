@@ -1,6 +1,43 @@
 .header{
-    color:white;
+    color:#0049B7;
+    font-size: 4vw;
+    display: flex;
+    justify-content: left;
+    align-items: left;
+    position: relative;
+    top:200px;
+    left:100px;
+    
 }
 .aboutContainer{
     color:white;
+    width: 80%;
+    height: 50%;
+    position: absolute;
+    vertical-align: center;
+    
+    top:1000px;
+
+}
+.picContainer{
+    top:450px;
+    width:60%;
+    display: flexbox;
+    float: right;
+    position: relative;
+    box-shadow: 5px 10px 5px rgb(49, 49, 49);
+}
+.aboutText{
+    color:white;
+    font-size: 5vw;
+    
+    
+}
+.bio{
+    font-size: 2vw;
+    padding-bottom: 25px;
+    text-indent: 50px;
+}
+.description{
+
 }
