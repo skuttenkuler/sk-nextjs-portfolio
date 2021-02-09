@@ -12,7 +12,7 @@ const ResumeLink = () => {
     return(
   
             <div className={styles.navItem}onMouseEnter={() => resumeLinkText("RESUME") } onMouseLeave={() => resumeLinkText("SAM")}>
-                <Link href="/blog">{text}</Link>
+                <Link href="/resume">{text}</Link>
             </div>
     )
 }

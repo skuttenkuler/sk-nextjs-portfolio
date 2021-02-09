@@ -1,10 +1,13 @@
 import ContactForm from "../components/ContactForm"
+import HomeButton from '../components/HomeButton'
+
 import styles from '../styles/Contact.module.css';
 
 
 const Contact = () => {
    
     return(
+        <HomeButton/>
         <main className={styles.main}>
             <h1>Get in touch!</h1>
             <div className={styles.contactContainer}>

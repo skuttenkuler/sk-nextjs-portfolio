@@ -1,8 +1,9 @@
 import ArticleList from '../components/ArticleList'
-
+import HomeButton from '../components/HomeButton'
 const Blog = ({articles}) => {
     return(
         <>
+        <HomeButton/>
         <h1>This is the blog page</h1>
          <ArticleList articles={articles}/>
         </>
