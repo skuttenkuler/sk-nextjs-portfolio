@@ -10,26 +10,14 @@
     
 }
 .aboutContainer{
-    color:white;
-    width: 80%;
-    height: 50%;
-    position: absolute;
-    vertical-align: center;
-    
-    top:1000px;
-
+    color: white;
 }
 .picContainer{
-    top:450px;
-    width:60%;
-    display: flexbox;
-    float: right;
-    position: relative;
-    box-shadow: 5px 10px 5px rgb(49, 49, 49);
+   
 }
 .aboutText{
     color:white;
-    font-size: 5vw;
+    
     
     
 }

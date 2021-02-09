@@ -11,6 +11,7 @@
     min-width: 80%;
     justify-content: right;
     align-items: right;
+    padding-right: 10px;
 }
 .homeText{
   color:white;
