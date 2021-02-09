@@ -20,7 +20,7 @@ export const projects = [
         title: 'Hacker Terminal',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/HackerTerminalGame',
-        thumbnail: '/images/StarSocial.png',
+        thumbnail: '/images/HackerTerm.png',
         description: "A simple C# Unity game. Hack one of three institutes and get a reward for guessing right."
     },
     {
@@ -44,7 +44,7 @@ export const projects = [
         title: 'Pupper',
         deployed: '//salty-harbor-03873.herokuapp.com/',
         code: '//github.com/skuttenkuler/Pupper',
-        thumbnail: '/images/pupper.png',
+        thumbnail: '/images/pupper.jpg',
         description: "A React application to find and match with the best good boys and girls."
     },
     {
