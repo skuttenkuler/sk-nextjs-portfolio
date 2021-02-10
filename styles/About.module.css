@@ -1,31 +1,50 @@
+
 .header{
     color:#0049B7;
-    font-size: 4vw;
+    font-size: 3vw;
     display: flex;
     justify-content: left;
     align-items: left;
     position: relative;
     top:200px;
     left:100px;
+    width: 90%;
     
 }
-.aboutContainer{
-    color: white;
+.summary{
+    color:white;
 }
 .picContainer{
-   
+    width:75vw;
+    position: absolute;
+    margin-top:450px;
+    right:0;
 }
+.aboutContainer{
+    position: absolute;
+    margin-top:1000px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding-bottom: 50px;
+}
+
 .aboutText{
+    font-size: 4vw;
+    width:50%;
     color:white;
-    
-    
-    
+    position: relative;
 }
 .bio{
     font-size: 2vw;
-    padding-bottom: 25px;
-    text-indent: 50px;
+    width:50%;
+    color: white;
 }
-.description{
-
+.pdfLink{
+    width:50%;
+    position: relative;
+    align-self: left;
+    color: #0049B7 !important;
+    text-decoration: none;
 }

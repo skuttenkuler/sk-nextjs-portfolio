@@ -6,7 +6,7 @@ const ResumeLink = () => {
     const [text, setText] = useState("SAM");
 
     const resumeLinkText = (text) => {
-        console.log("switched")
+        //console.log("switched")
         setText(text);
     }
     return(

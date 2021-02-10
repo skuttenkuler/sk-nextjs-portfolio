@@ -1,8 +1,17 @@
-//import font
-@import url('https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@700&display=swap');
 
+@import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Josefin+Sans:wght@700&display=swap');
 //link font
-p, h1, h2, h3, h4, a{
+h1, h2, h3, h4, a{
     font-family: 'Josefin Sans', sans-serif;
     
+}
+p{
+    font-family: 'IBM Plex Sans', sans-serif;
+}
+#pdf{
+    color: #0049B7 !important;
+}
+#pdf:hover{
+    color: white !important;
+    transition: .5s;
 }

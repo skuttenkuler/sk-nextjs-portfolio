@@ -4,7 +4,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    
+    transition-delay: 2s; /* delays for 1 second */
+    -webkit-transition-delay: 2s; /* for Safari & Chrome */
 
   }
 

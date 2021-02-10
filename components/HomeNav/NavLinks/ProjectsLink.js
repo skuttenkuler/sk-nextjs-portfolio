@@ -11,7 +11,7 @@ const ProjectsLink = () => {
     const [text, setText] = useState(greeting);
 
     let aboutText = (text) => {
-        console.log(text)
+       // console.log(text)
         setText(text);
     }
     return(

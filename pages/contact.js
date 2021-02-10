@@ -7,8 +7,8 @@ import styles from '../styles/Contact.module.css';
 const Contact = () => {
    
     return(
-        <HomeButton/>
         <main className={styles.main}>
+        <HomeButton/>
             <h1>Get in touch!</h1>
             <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>
