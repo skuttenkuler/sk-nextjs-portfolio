@@ -8,23 +8,18 @@ export const projects = [
         tech: [
             {
                 name:"React",
-                icon:"<SiReact/>"
             },
             {
                 name:"TypeScript",
-                icon:"<SiTypescript/>"
             },
             {
                 name:"Redux",
-                icon:"<SiRedux/>"
             },
             {
                 name:"Node",
-                icon:"<FaNodeJs/>"
             },
             {
                 name:"Firebase",
-                icon:"<SiFirebase/>"
             }
         ],
         description: "Learn the differences of the 4 main versions of the Falcon Rocket developed by SpaceX."
@@ -38,19 +33,15 @@ export const projects = [
         tech: [
             {
                 name:"Django",
-                icon:"<SiDjango/>"
             },
             {
                 name:"HTML",
-                icon:"<SiHtml5/>"
             },
             {
                 name:"CSS",
-                icon:"<SiCss3/>"
             },
             {
                 name:"Javascript",
-                icon:"<SiJavascript/>"
             },
            
         ],
@@ -65,7 +56,6 @@ export const projects = [
         tech: [
             {
                 name:"Unity",
-                icon:"<SiUnity/>"
             },
             {
                 name:"C#",
@@ -81,8 +71,7 @@ export const projects = [
         thumbnail: '/images/projects/Gorillaz.jpg',
         tech: [
             {
-                name:"react",
-                icon:"<SiReact/>"
+                name:"React",
             },
         ],
         description: "A Gorillaz inspiried Click Game."
@@ -96,15 +85,12 @@ export const projects = [
         tech: [
             {
                 name:"HTML",
-                icon:"<SiHtml5/>"
             },
             {
                 name:"CSS",
-                icon:"<SiCss3/>"
             },
             {
                 name:"Javascript",
-                icon:"<SiJavascript/>"
             },
         ],
         description: "Test your Simpsons knowledge, take the quiz man!"
@@ -118,7 +104,6 @@ export const projects = [
         tech: [
             {
                 name:"React",
-                icon:"<SiReact/>"
             },
         ],
         description: "A React application to find and match with the best good boys and girls."
@@ -132,15 +117,12 @@ export const projects = [
         tech: [
             {
                 name:"React",
-                icon:"<SiReact/>"
             },
             {
                 name:"Node",
-                icon:"<FaNodeJs/>"
             },
             {
                 name:"MongoDB",
-                icon:"<SiMongodb/>"
             }, 
         ],
         description: "Search for your favorite books using the Google Books API!"

@@ -1,8 +1,10 @@
 import React, {useState} from 'react'
+import {server} from '../config'
 import Image from 'next/image'
 import HomeButton from '../components/HomeButton'
 import styles from '../styles/About.module.css'
-const About = () => {
+import SkillsTables from '../components/SkillsTables';
+const About = ({skills}) => {
 
    
         const [text, setText] = useState("RESUME");
@@ -30,7 +32,7 @@ const About = () => {
                         layout="responsive"
                         />    
             </div>
-                
+            <SkillsTables skills={skills}/>
             
             <div className={styles.aboutContainer}>
                 <h3 className={styles.aboutText}>ABOUT</h3>
@@ -52,5 +54,16 @@ const About = () => {
     
     )       
 };
+export const getStaticProps = async () => {
+    const res = await fetch(`${server}/api/skills`)
+    const skills = await res.json();
+    
+    //return props object
+    return{
+        props: {
+            skills
+        }
+    }
+}
 
 export default About;

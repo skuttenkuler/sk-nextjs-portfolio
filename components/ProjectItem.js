@@ -1,17 +1,5 @@
-import React from 'react'
 import Link from 'next/link'
 import Image from 'next/image'
-import {SiReact,
-    SiTypescript,
-    SiRedux,
-    FaNodeJs,
-    SiFirebase,
-    SiDjango,
-    SiHtml5,
-    SiCss3,
-    SiJavascript,
-    SiUnity,
-    SiMongodb,} from 'react-icons/si';
 import styles from '../styles/ProjectsList.module.css'
 
 const ProjectItem = ({project, object_key}) => {
@@ -23,10 +11,9 @@ const ProjectItem = ({project, object_key}) => {
                 <div className={styles.projectContainer}>
                    <div>
                    {project.tech.map((t, i) => ( 
-                    <div key={i}>
-                        {React.createElement(t.icon)}
-                        
-                    </div>
+                    <ul key={i} className={styles.techList}>
+                        <li className={styles.techName}>{t.name}</li>
+                    </ul>
                     ))}
                     </div>
                 <Image src={project.thumbnail}

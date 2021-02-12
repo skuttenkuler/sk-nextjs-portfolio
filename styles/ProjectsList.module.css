@@ -4,7 +4,7 @@
     align-items: center;
     justify-content: center;
     flex-wrap: wrap;
-    max-width: 1500px;
+    max-width: 1000px;
     margin-top: 3rem;
   }
   
@@ -38,12 +38,25 @@
     line-height: 1.5;
   }
   
-  .logo {
-    height: 1em;
-  }
-  .tech{
-    color:white;
-  }
+.logo {
+  height: 1em;
+}
+
+.techList{
+  display: inline;
+  transition: color 0.25s ease, border-color 0.25s ease;
+}
+.techName{
+  text-transform: uppercase;
+  list-style: none;
+  display: inline;
+}
+.techList:hover,
+.techList:focus,
+.techList:active {
+  color: white;
+  
+}
   @media (max-width: 600px) {
     .grid {
       width: 100%;
