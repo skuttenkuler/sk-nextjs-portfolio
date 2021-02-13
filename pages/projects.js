@@ -1,11 +1,13 @@
 import {server} from '../config'
 import ProjectsList from '../components/ProjectsList'
 import HomeButton from '../components/HomeButton'
+import Testimonials from '../components/Testimonials'
 
 const Projects = ({projects}) => {
     return(
         <>
         <HomeButton/>
+        <Testimonials/>
         <h1>This is the Projects page</h1>
         <ProjectsList projects={projects}/>
         </>

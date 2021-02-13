@@ -1,6 +1,6 @@
 import styles from '../styles/SkillsCard.module.css'
 const SkillCard = ({skillKey, values}) => {
-    console.log(skillKey)
+    //console.log(skillKey)
     return (
         
             <div className={styles.skillCardContainer}>
