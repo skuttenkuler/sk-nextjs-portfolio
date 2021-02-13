@@ -3,12 +3,11 @@ import ProjectsList from '../components/ProjectsList'
 import HomeButton from '../components/HomeButton'
 import Testimonials from '../components/Testimonials'
 
-const Projects = ({projects}) => {
+const Projects = ({projects, testimonials}) => {
     return(
         <>
         <HomeButton/>
-        <Testimonials/>
-        <h1>This is the Projects page</h1>
+        <Testimonials testimonials={testimonials} />
         <ProjectsList projects={projects}/>
         </>
         )
@@ -16,14 +15,18 @@ const Projects = ({projects}) => {
 
 
 export const getStaticProps = async () => {
-    const res = await fetch(`${server}/api/projects`)
-    const projects = await res.json();
+    const [projects, testimonials] = await Promise.all([
+        fetch(`${server}/api/projects`).then(r => r.json()),
+        fetch(`${server}/api/testimonials`).then(r => r.json())
+      ]);
     
     //return props object
     return{
         props: {
-            projects
+            projects,
+            testimonials
         }
     }
 }
+
 export default Projects;

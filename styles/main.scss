@@ -1,11 +1,11 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Josefin+Sans:wght@700&display=swap');
 //link font
-h1, h2, h3, h4, a, li{
+h1, h2, h3, h4, a, li, #name{
     font-family: 'Josefin Sans', sans-serif;
     
 }
-p{
+p,#role,#body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
 #pdf{
