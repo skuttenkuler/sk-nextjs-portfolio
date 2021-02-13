@@ -7,3 +7,10 @@
 	justify-content: center;
 	flex-wrap: wrap;
 }
+
+
+@media screen and (max-width: 760px){
+    .Skills{
+      margin-top: 500px;
+	}
+}

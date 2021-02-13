@@ -48,3 +48,27 @@
     color: #0049B7 !important;
     text-decoration: none;
 }
+@media screen and (max-width: 1193px){
+.aboutContainer{
+    margin-top:2700px;
+}
+}
+@media screen and (max-width: 760px){
+    .aboutContainer{
+        margin-top:2100px;
+    }
+    .picContainer{
+        
+        margin-top:250px;
+        width: 100vw;
+    
+    }
+    .aboutText{
+        font-size: 2rem !important;
+    }
+    .bio{
+        font-size: 1rem !important;
+        width:80vw;
+        margin-left:25px;
+    }
+    }
