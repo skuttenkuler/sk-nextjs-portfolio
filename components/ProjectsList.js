@@ -1,15 +1,13 @@
-import ProjectItem from './ProjectItem'
+import ProjectLink from './ProjectLink'
 import styles from '../styles/ProjectsList.module.css'
 
 const ProjectList = ({projects}) => {
-
-    //console.log(projects)
     return(
-        <div className={styles.grid}>
-            {projects.map((project, object_key) => (
-                <ProjectItem project={project} key={object_key}/>
-            ))} 
-        </div>
+        <ul>
+         {projects.map((project) => (
+            <ProjectLink project={project} />
+        ))}
+        </ul>
     )
 }
 

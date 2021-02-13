@@ -2,7 +2,7 @@ import React, {useState} from 'react'
 import Link from 'next/link'
 import styles from '../styles/Button.module.css'
 
-const HomeButton = () => {
+const ProjectsButton = () => {
     const [text, setText] = useState("Sam.");
 
     let buttonText = (text) => {
@@ -10,11 +10,11 @@ const HomeButton = () => {
     }
 
     return(
-        <div className={styles.Button} onMouseEnter={() => buttonText("Home.")} 
+        <div className={styles.Button} onMouseEnter={() => buttonText("Projects.")} 
         onMouseLeave={() => buttonText("Sam.")}>
             <Link href="/" >{text}</Link>
         </div>
     )
 }
 
-export default HomeButton;
+export default ProjectsButton;
