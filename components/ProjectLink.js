@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+
 import Link from 'next/link'
 import styles from '../styles/ProjectsList.module.css'
 
@@ -13,7 +13,7 @@ const ProjectLink = ({project}) => {
                 <div className="p-details"id="project-details">
                     <ul id="tech-list"className={styles.techlist}>
                     {project.tech.map((t,i) => (
-                        <li key={i}className={styles.techList}>{t}</li>
+                        <li key={i} className={styles.techList}>{t}</li>
                     ))}
                     </ul>
                     <p id="proj-desc"className={styles.projectDesc}>{project.description}</p>

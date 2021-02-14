@@ -6,8 +6,8 @@ return(
     <div className="slider">
     <h1 className="testimonials-title">Testimonials</h1>
                 <div className="slides">
-                    {testimonials.map((slide) => (
-                    <div name={"slide-" + slide.id} id={"slide-" + slide.id}>
+                    {testimonials.map((slide, i) => (
+                    <div key={i} name={"slide-" + slide.id} id={"slide-" + slide.id}>
                         <Image
                             id="slide-image"
                             src={slide.thumbnail}

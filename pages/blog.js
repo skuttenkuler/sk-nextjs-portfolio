@@ -4,8 +4,7 @@ const Blog = ({articles}) => {
     return(
         <>
         <HomeButton/>
-        <h1>This is the blog page</h1>
-         <ArticleList articles={articles}/>
+        <ArticleList articles={articles}/>
         </>
         )
 };
@@ -22,6 +21,4 @@ export const getStaticProps = async () => {
         }
     }
 }
-
-
 export default Blog;

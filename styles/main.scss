@@ -8,7 +8,7 @@ h1, h2, h3, h4, a, li, #name{
 p,#role,#body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
-#project-title{
+#project-title, #article-title{
     color: #0049B7;
 }
 
@@ -20,31 +20,50 @@ p,#role,#body{
     transition: .5s;
 }
 ul { padding:0 } 
-.projectlistContainer{
+.projectlistContainer, .articlelistContainer{
     top:500px
 }
-.projects:hover{
-    margin-left:100px;
-    -webkit-transition: all .75s ease-out;
-    -moz-transition: all .75s ease-out;
-    -o-transition: all .75s ease-out;
-    -ms-transition: all .75s ease-out;
-    transition: all .75s ease-out;
+// .projects:hover, .articles:hover{
+//     animation: moveX;
+//     transition: transform .75s ease-out;
+//     -webkit-transition: .75s ease;
+//     -moz-transition: .75s ease;
+//     -o-transition: .75s ease;
+//     -ms-transition: .75s ease;
+//     transition: .75s ease;
+// }
+.projects, .articles{
+    margin-left:0;
+    -webkit-transition: margin .75s;
 }
+.proejcts:focus, .projects:hover, .articles:focus, .articles:hover  {
+    margin-left:50px;
+    transition: transform .75s ease-out;
+    -webkit-transition: .75s ease;
+    -moz-transition: .75s ease;
+    -o-transition: .75s ease;
+    -ms-transition: .75s ease;
+    transition: .75s ease;
+  }
+
+ 
 .p-details{
     margin-left:25px;
 }
 .p-details ul{
-    visibility: hidden;
+    opacity: 0;
+    transition: 0.5s;
 }
 .projects:hover ul{
-    visibility: visible;
+    opacity: 1;
+    
 }
 @media screen and (max-width: 600px){
 .p-details ul{
-   visibility: visible;
+    opacity: 1;
+    
 }
-#project-title{
+#project-title, #article-title{
     font-size: 4rem;
 }
 #tech-list{

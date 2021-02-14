@@ -8,7 +8,6 @@
   }
 .navItem:hover{
   -webkit-transition: all 1s ease-out;
-
 }
   @media only screen and (max-width: 600px) {
     .navItem{

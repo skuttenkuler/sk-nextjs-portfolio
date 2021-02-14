@@ -1,0 +1,33 @@
+
+.ArticleList {
+  display: inline-block;
+  margin-top:200px;
+  margin-left: 100px;
+}
+
+.articleTitle{
+  font-size: 7vw;
+  padding-top: 100px;
+  margin: 0 auto;
+  text-transform: uppercase;
+
+}
+
+.date{
+  color:white;
+  font-size: 2vw;
+  margin: 0 auto;
+}
+
+@media screen and (max-width:600px){
+  .ArticleList {
+    margin-top:50px;
+    margin-left: 25px;
+  }
+  .date{
+    font-size:1.2rem;
+    margin-left: 5px;
+  }
+}
+
+  
