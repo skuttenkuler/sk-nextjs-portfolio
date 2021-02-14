@@ -4,11 +4,12 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    transition-delay: 2s; /* delays for 1 second */
-    -webkit-transition-delay: 2s; /* for Safari & Chrome */
 
   }
+.navItem:hover{
+  -webkit-transition: all 1s ease-out;
 
+}
   @media only screen and (max-width: 600px) {
     .navItem{
        font-size: 5rem; 

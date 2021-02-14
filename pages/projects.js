@@ -7,8 +7,8 @@ const Projects = ({projects, testimonials}) => {
     return(
         <>
         <HomeButton/>
-        <Testimonials testimonials={testimonials} />
         <ProjectsList projects={projects}/>
+        <Testimonials testimonials={testimonials} />
         </>
         )
 };

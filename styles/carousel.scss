@@ -1,3 +1,10 @@
+.testimonials-title{
+    color: white;
+    position: relative;
+    margin: 0 auto;
+    font-size: 5vw;
+    margin-top:100px;
+}
 .slider {
 width: 75vw;
 height:400px;
@@ -5,7 +12,7 @@ margin: 0 auto;
 justify-content: center;
 text-align: center;
 position: relative;
-top:250px;
+bottom: 0;
 }
 
 .slides {   
@@ -71,8 +78,8 @@ margin-top:220px;
 }
 .slider > a {
 display: inline-flex;
-width: 1rem;
-height: 1rem;
+width: .75rem;
+height: .75rem;
 background: white;
 text-decoration: none;
 align-items: center;
@@ -86,6 +93,7 @@ top: 1px;
 }
 .slider > a:focus {
 background: #0049B7;
+transform: scale(1.5);
 }
 
 

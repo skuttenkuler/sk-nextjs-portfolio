@@ -8,10 +8,51 @@ h1, h2, h3, h4, a, li, #name{
 p,#role,#body{
     font-family: 'IBM Plex Sans', sans-serif;
 }
+#project-title{
+    color: #0049B7;
+}
+
 #pdf{
     color: #0049B7 !important;
 }
 #pdf:hover{
     color: white !important;
     transition: .5s;
+}
+ul { padding:0 } 
+.projectlistContainer{
+    top:500px
+}
+.projects:hover{
+    margin-left:100px;
+    -webkit-transition: all .75s ease-out;
+    -moz-transition: all .75s ease-out;
+    -o-transition: all .75s ease-out;
+    -ms-transition: all .75s ease-out;
+    transition: all .75s ease-out;
+}
+.p-details{
+    margin-left:25px;
+}
+.p-details ul{
+    visibility: hidden;
+}
+.projects:hover ul{
+    visibility: visible;
+}
+@media screen and (max-width: 600px){
+.p-details ul{
+   visibility: visible;
+}
+#project-title{
+    font-size: 4rem;
+}
+#tech-list{
+    font-size: .5rem;
+    padding-left:5px;
+}
+
+.ProjectsList_ProjectList__1dYYN{
+    margin-left:25px;
+}
 }

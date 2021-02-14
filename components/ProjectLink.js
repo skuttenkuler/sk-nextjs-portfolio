@@ -1,18 +1,26 @@
+import React, {useState} from 'react'
 import Link from 'next/link'
-import Image from 'next/image'
 import styles from '../styles/ProjectsList.module.css'
+
 
 const ProjectLink = ({project}) => {
 
     return (
+        <div className="projects">
             <Link href={`/project/${project.id}`}>
-                <a>
-                    <h4 className={styles.projectTitle}>{project.title}</h4>
-                    <br/>
-                    <p className={styles.projectDesc}>{project.description}</p>
+                <a className={styles.project}>
+                    <h4 id="project-title"className={styles.projectTitle}>{project.title}</h4>
+                <div className="p-details"id="project-details">
+                    <ul id="tech-list"className={styles.techlist}>
+                    {project.tech.map((t,i) => (
+                        <li key={i}className={styles.techList}>{t}</li>
+                    ))}
+                    </ul>
+                    <p id="proj-desc"className={styles.projectDesc}>{project.description}</p>
+                </div>
                 </a>
             </Link>
-                    
+        </div>     
             )
     }
 
