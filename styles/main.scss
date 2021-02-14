@@ -1,12 +1,26 @@
 
 @import url('https://fonts.googleapis.com/css2?family=IBM+Plex+Sans:wght@200&family=Josefin+Sans:wght@700&display=swap');
 //link font
-h1, h2, h3, h4, a, li, #name{
+h1, h2, h3, h4, a, li, #name, button, input, textarea{
     font-family: 'Josefin Sans', sans-serif;
     
 }
 p,#role,#body{
     font-family: 'IBM Plex Sans', sans-serif;
+}
+input:focus, textarea:focus{
+    outline: none;
+    border: none;
+}
+input, textarea{
+    caret-color: #0049B7;
+    color: #0049B7;
+    font-size:25px;
+    border:none;
+    background-color:black;
+}
+textarea{
+    resize: none;
 }
 #project-title, #article-title{
     color: #0049B7;
@@ -23,15 +37,7 @@ ul { padding:0 }
 .projectlistContainer, .articlelistContainer{
     top:500px
 }
-// .projects:hover, .articles:hover{
-//     animation: moveX;
-//     transition: transform .75s ease-out;
-//     -webkit-transition: .75s ease;
-//     -moz-transition: .75s ease;
-//     -o-transition: .75s ease;
-//     -ms-transition: .75s ease;
-//     transition: .75s ease;
-// }
+
 .projects, .articles{
     margin-left:0;
     -webkit-transition: margin .75s;
@@ -58,6 +64,20 @@ ul { padding:0 }
     opacity: 1;
     
 }
+
+#name::placeholder{
+    font-size:20px;
+    color: #0049B7;
+}
+#email::placeholder{
+    font-size:20px;
+    color: #0049B7;
+}
+#message::placeholder{
+    font-size:20px;
+    color: #0049B7;
+}
+
 @media screen and (max-width: 600px){
 .p-details ul{
     opacity: 1;

@@ -1,0 +1,21 @@
+.form{
+    display: flex;
+    flex-direction: column;
+    margin-left:25px;
+}
+
+.form input {
+    border:none;
+    height:30px;
+    /* font-size: 25px; */
+}
+
+.sendButton{
+    background-color: transparent;
+    border: none;
+    color: black;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 25px;
+}

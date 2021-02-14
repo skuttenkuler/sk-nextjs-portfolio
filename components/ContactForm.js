@@ -1,22 +1,19 @@
-
+import styles from '../styles/Form.module.css'
 const ContactForm = () => {
     return(
     <>
-        <form name="contact" method="POST" data-netlify="true">
-            <p>
-                <label for="name">Name</label>
-                <input type="text" id="name" name="name" />
+        <form className={styles.form}name="contact" method="POST" data-netlify="true">
+            <p >
+                <input className={styles.name} type="text" id="name" name="name" placeholder="Name.." />
             </p>
-            <p>
-                <label for="email">Email</label>
-                <input type="text" id="email" name="email" />
+            <p >
+                <input className={styles.email} type="text" id="email" name="email" placeholder="Email.." />
             </p>
-            <p>
-                <label for="message">Message</label>
-                <textarea id="message" name="message"></textarea>
+            <p >
+                <textarea className={styles.message} id="message" name="message" placeholder="What do you want to build?"></textarea>
             </p>
-            <p>
-                <button type="submit">Send</button>
+            <p >
+                <button className={styles.sendButton} type="submit">Send</button>
             </p>
         </form>
   </>

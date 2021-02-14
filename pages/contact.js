@@ -7,12 +7,13 @@ import styles from '../styles/Contact.module.css';
 const Contact = () => {
    
     return(
-        <main className={styles.main}>
+        <>
+            <h1 className={styles.header}>Let's build something great.</h1>
+        <main className={styles.main}>  
         <HomeButton/>
-            <h1>Get in touch!</h1>
             <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>
-                    <h3 className={styles.h3}>Sam Kuttenkuler</h3>
+                    <h3 className={styles.name}>Sam Kuttenkuler</h3>
                     <div className={styles.socialMedia}>
                         <a href="#" className={styles.icon}>
                             <i class="fa fa-instagram" aria-hidden="true"></i>
@@ -36,6 +37,7 @@ const Contact = () => {
             <ContactForm/>
             </div>
         </main>
+        </>
         )
 };
 
