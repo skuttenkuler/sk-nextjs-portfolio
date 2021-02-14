@@ -3,8 +3,8 @@ export const projects = [
         id: 1,
         title: 'Falcon Heavy',
         deployed: '//immense-beyond-39985.herokuapp.com',
-        code: '//www.github.com/skuttenkuler/SpaceX',
-        thumbnail: '/images/projects/FalconHeavey.png',
+        code: '//www.github.com/skuttenkuler/FalconHeavy',
+        thumbnail: '/images/projects/falconheavy.png',
         tech: ["React","TypeScript","Redux","Node","Firebase"],
         description: "Explore SpaceX rocket data."
     },
@@ -13,7 +13,7 @@ export const projects = [
         title: 'Star Social',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/StarSocial/',
-        thumbnail: '/images/projects/StarSocial.png',
+        thumbnail: '/images/projects/starsocial.png',
         tech: ["Django","HTML","CSS","Javascript"],
         description: "Space related social media application."
     },
@@ -22,18 +22,18 @@ export const projects = [
         title: 'Hacker Terminal',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/HackerTerminalGame',
-        thumbnail: '/images/projects/HackerTerm.png',
+        thumbnail: '/images/projects/hackerterminal.png',
         tech: ["Unity","C#"],
         description: "Unity Game"
     },
     {
         id: 3,
-        title: 'Gorillaz Game',
+        title: 'James C. Burns',
         deployed: '//skuttenkuler.github.io/Gorillaz-Clicky-Game/',
         code: '//www.github.com/skuttenkuler/Gorillaz-Clicky-Game',
-        thumbnail: '/images/projects/Gorillaz.jpg',
-        tech: ["React"],
-        description: "A Gorillaz inspiried Click Game."
+        thumbnail: '/images/projects/jamescburns.jpg',
+        tech: ["React","CSS"],
+        description: "Portfolio and resume application."
     },
     {
         id: 4,

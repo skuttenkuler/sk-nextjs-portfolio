@@ -9,7 +9,7 @@ const project = ({project}) => {
         <ProjectsButton/>
         <Meta title={project.title} description={project.description}/>
         <h1>{project.title}</h1>
-        
+        {/* Image 1000 by 571 */}
         </>
 
     )
