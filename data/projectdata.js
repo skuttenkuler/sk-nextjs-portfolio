@@ -19,6 +19,32 @@ export const projects = [
     },
     {
         id: 3,
+        title: 'Payroll & Picks',
+        deployed: '//payrollandpicks.com',
+        code: '//github.com/skuttenkuler/payrollandpicks',
+        thumbnail: '/images/projects/payrollandpicks.png',
+        tech: ["Next.js","TypeScript","PostgreSQL","GraphQL"],
+        description: "NBA salary cap and fantasy drafts"
+    },
+    {
+        id: 4,
+        title: 'James C. Burns',
+        deployed: '//jamescburns.com',
+        code: '//www.github.com/skuttenkuler/JamesCBurns',
+        thumbnail: '/images/projects/jamescburns.png',
+        tech: ["React","CSS"],
+        description: "Actor Portfolio"
+    },
+    {
+        id: 5,
+        title: 'Music Store',
+        code: '//www.github.com/skuttenkuler/Music-Store-CPP',
+        thumbnail: '/images/projects/musicstore.png',
+        tech: ["C++","MySQL"],
+        description: "Music Store Management System"
+    },
+    {
+        id: 6,
         title: 'Hacker Terminal',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/HackerTerminalGame',
@@ -27,39 +53,12 @@ export const projects = [
         description: "Unity Game"
     },
     {
-        id: 3,
-        title: 'James C. Burns',
-        deployed: '//skuttenkuler.github.io/Gorillaz-Clicky-Game/',
-        code: '//www.github.com/skuttenkuler/Gorillaz-Clicky-Game',
-        thumbnail: '/images/projects/jamescburns.jpg',
-        tech: ["React","CSS"],
-        description: "Portfolio and resume application."
-    },
-    {
-        id: 4,
-        title: 'Simpsons Quiz',
-        deployed: '//skuttenkuler.github.io/Code-Quiz/',
-        code: '//www.github.com/skuttenkuler/Code-Quiz',
-        thumbnail: '/images/projects/Simpsons.png',
-        tech: ["HTML","CSS","Javascript"],
-        description: "Quiz Application"
-    },
-    {
-        id: 5,
-        title: 'Pupper',
-        deployed: '//salty-harbor-03873.herokuapp.com/',
-        code: '//github.com/skuttenkuler/Pupper',
-        thumbnail: '/images/projects/pupper.jpg',
-        tech: ["React"],
-        description: "Dog matching application."
-    },
-    {
-        id: 6,
+        id: 7,
         title: 'Book Store',
         deployed: '//still-earth-60188.herokuapp.com/',
         code: '//github.com/skuttenkuler/Book-Store',
-        thumbnail: '/images/projects/books.png',
-        tech: ["React","Node","MongoDB"],
+        thumbnail: '/images/projects/bookstore.png',
+        tech: ["React","Node.js","MongoDB"],
         description: "Google API Book Store"
     },
 ]
