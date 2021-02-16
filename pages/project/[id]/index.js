@@ -1,25 +1,74 @@
 import {server} from '../../../config/index'
-import Link from 'next/link'
-import Image from 'next/image'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
+import styles from '../../../styles/Project.module.css'
+import Image from 'next/image'
+import Link from 'next/link'
 const project = ({project}) => {
+    
     return(
         <>
         <ProjectsButton/>
         <Meta title={project.title} description={project.description}/>
-        <h1>{project.title}</h1>
-        {/* Image 1000 by 571 */}
-        </>
+        <div className={styles.projectContainer}>
+            <div className={styles.projectImage}>
+                {project.deployed ? 
+                    <Link href={project.deployed}>
+                        <a>
+                            <Image
+                                src={project.thumbnail}
+                                alt={project.title}
+                                width={1000}
+                                height={571}
+                            />
+                        </a>
+                    </Link>
+                :
+                <Image
+                src={project.thumbnail}
+                alt={project.title}
+                width={1000}
+                height={571}
+                 />
+                }
+            </div>
+            <div className={styles.projectDetails}>
+                <h1 className={styles.title}>{project.title}</h1>
+                <ul id="tech-list"className={styles.techlist}>
+                    {project.tech.map((t,i) => (
+                        <li key={i} >{t}</li>
+                    ))}
+                </ul>
+                <p className={styles.description}>{project.description}</p>
+                <ul className={styles.links}>
+                    <Link className={styles.github}href={project.code}>
+                        <a id="icon">
+                            <i class="fa fa-github"></i>
+                        </a>
+                    </Link>
+                    {project.deployed ? 
+                        <Link className={styles.link}href={project.deployed}>
+                            <a id="icon">
+                                <i class="fa fa-link"></i>
+                            </a>
+                        </Link> 
+                        :
+                        <></>
+                    }
+                </ul>
+                
+            </div>
+        </div>
+    </>
+   
 
     )
 }
 //get props
 export const getStaticProps = async (context) =>{
     const res = await fetch(`${server}/api/projects/${context.params.id}`)
-
     const project = await res.json()
-
+    
     return {
         props: {
             project,
@@ -32,6 +81,7 @@ export const getStaticPaths = async () => {
     const projects = await res.json()
     const ids = projects.map((project) => project.id)
     const paths = ids.map((id) => ({params: {id: id.toString()}}))
+    
     return {
         paths,
         fallback:false,

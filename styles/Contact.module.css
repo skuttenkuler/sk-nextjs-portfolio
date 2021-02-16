@@ -41,11 +41,11 @@
     justify-content: space-between;
 }
 .icon{
-    flex: 1 1 80px;
     display: flex;
     justify-content: center;
     align-items: center;
     height:80px;
+    width: 80px;
     border-radius: 50%;
     transition: .3 all ease-in-out;
 }
@@ -56,6 +56,7 @@
 .icon:hover{
     background: #37485d;
     transition: .3s all ease-in-out;
+
 }
 
 .fa{

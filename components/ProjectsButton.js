@@ -12,7 +12,7 @@ const ProjectsButton = () => {
     return(
         <div className={styles.Button} onMouseEnter={() => buttonText("Projects.")} 
         onMouseLeave={() => buttonText("Sam.")}>
-            <Link href="/" >{text}</Link>
+            <Link href="/projects" >{text}</Link>
         </div>
     )
 }
