@@ -13,9 +13,14 @@
 .sendButton{
     background-color: transparent;
     border: none;
-    color: black;
+    color: #0049B7;
     text-align: center;
     text-decoration: none;
     display: inline-block;
     font-size: 25px;
+    transition: all .75s ease-in-out;
+}
+.sendButton:hover{
+    color:white;
+    
 }
