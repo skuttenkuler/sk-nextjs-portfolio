@@ -1,4 +1,5 @@
 import {server} from '../../../config/index'
+import data from '../../../data/projectdata'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
@@ -43,13 +44,13 @@ const project = ({project}) => {
                 <ul className={styles.links}>
                     <Link className={styles.github}href={project.code}>
                         <a id="icon">
-                            <i class="fa fa-github"></i>
+                            <i className="fa fa-github"></i>
                         </a>
                     </Link>
                     {project.deployed ? 
                         <Link className={styles.link}href={project.deployed}>
                             <a id="icon">
-                                <i class="fa fa-link"></i>
+                                <i className="fa fa-link"></i>
                             </a>
                         </Link> 
                         :
@@ -65,16 +66,16 @@ const project = ({project}) => {
     )
 }
 //get props
-export const getStaticProps = async (context) =>{
+export const getStaticProps = async (context) => {
     const res = await fetch(`${server}/api/projects/${context.params.id}`)
+  
     const project = await res.json()
-    
     return {
-        props: {
-            project,
-        }
+      props: {
+        project,
+      },
     }
-}
+  }
 //get paths
 export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/projects`)
