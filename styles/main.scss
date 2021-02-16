@@ -15,7 +15,7 @@ input:focus, textarea:focus{
 input, textarea{
     caret-color: #0049B7;
     color: #0049B7;
-    font-size:25px;
+    font-size:3vw;
     border:none;
     background-color:black;
 }
@@ -64,17 +64,28 @@ ul { padding:0 }
     opacity: 1;
     
 }
-
+#name{
+    width:100%;
+    height:50px;
+}
+#email{
+    width:100%;
+    height:50px;
+}
+#message{
+    width:100%;
+    height:50px;
+}
 #name::placeholder{
-    font-size:20px;
+    font-size:2vw;
     color: #0049B7;
 }
 #email::placeholder{
-    font-size:20px;
+    font-size:2vw;
     color: #0049B7;
 }
 #message::placeholder{
-    font-size:20px;
+    font-size:2vw;
     color: #0049B7;
 }
 #icon{
@@ -115,4 +126,18 @@ ul { padding:0 }
 .ProjectsList_ProjectList__1dYYN{
     margin-left:25px;
 }
+#name::placeholder{
+    font-size:25px;
+    color: #0049B7;
+}
+#email::placeholder{
+    font-size:25px;
+    color: #0049B7;
+}
+#message::placeholder{
+    font-size:25px;
+    color: #0049B7;
+}
+
+
 }

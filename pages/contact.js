@@ -8,13 +8,12 @@ const Contact = () => {
    
     return(
         <>
-            <h1 className={styles.header}>Let's build something great.</h1>
-        <main className={styles.main}>  
         <HomeButton/>
+            <h1 className={styles.header}>Let's build something great.</h1>
             <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>
                     <h3 className={styles.name}>Sam Kuttenkuler</h3>
-                    <div className={styles.socialMedia}>
+                    <ul id="contact-list"className={styles.socialMedia}>
                         <a href="#" className={styles.icon}>
                             <i class="fa fa-instagram" aria-hidden="true"></i>
                         </a>
@@ -30,13 +29,12 @@ const Contact = () => {
                         <a href="#" className={styles.icon}>
                             <i class="fa fa-twitch" aria-hidden="true"></i>
                         </a>
-                    </div>
+                    </ul>
                 </div>
         
         
-            <ContactForm/>
+                <ContactForm className={styles.contactForm}/>
             </div>
-        </main>
         </>
         )
 };
