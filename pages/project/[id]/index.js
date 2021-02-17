@@ -1,46 +1,37 @@
 import {server} from '../../../config/index'
-import data from '../../../data/projectdata'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
+import { useAmp } from 'next/amp'
+export const config = { amp: 'hybrid' }
 const project = ({project}) => {
-    
+    const isAmp = useAmp()
     return(
         <>
         <ProjectsButton/>
         <Meta title={project.title} description={project.description}/>
         <div className={styles.projectContainer}>
             <div className={styles.projectImage}>
-                {project.deployed ? 
+                {isAmp & project.deployed ? 
                     <Link href={project.deployed}>
-                        <a id="pic"> 
-
-                        
-                        <style jsx>{
-                            `#pic{
-                                content: url(${project.thumbnail});
-                                width:1000;
-                                hieght:971;
-                            }`
-                        }</style>
+                        <a>
+                            <amp-img
+                                src={project.thumbnail}
+                                alt={project.title}
+                                width={1000}
+                                height={571}
+                            />
                         </a>
                     </Link>
                 :
-                <Link href={project.code}>
-                        <a id="pic"> 
-                        
-                        <style jsx>{
-                            `#pic{
-                                content: url(${project.thumbnail});
-                                width:1000;
-                                hieght:971;
-                                
-                            }`
-                        }</style>
-                        </a>
-                    </Link>
+                <amp-img
+                src={project.thumbnail}
+                alt={project.title}
+                width={1000}
+                height={571}
+                 />
                 }
             </div>
             <div className={styles.projectDetails}>

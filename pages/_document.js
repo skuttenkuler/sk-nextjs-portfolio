@@ -15,6 +15,7 @@ class MyDocument extends Document {
 awesome.min.css" rel="stylesheet" integrity="sha384-
 wvfXpqpZZVQGK6TAh5PVlGOfQNHSoD2xbE+QkPxCAFlNEevoEH3Sl0sibVcOQVnN" 
 crossorigin="anonymous"></link>
+<script async src="https://cdn.ampproject.org/v0.js"></script>
         </Head>
         <body>
           <Main />
