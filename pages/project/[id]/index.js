@@ -4,10 +4,8 @@ import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
 import Image from 'next/image'
 import Link from 'next/link'
-import { useAmp } from 'next/amp'
-export const config = { amp: 'hybrid' }
+
 const project = ({project}) => {
-    const isAmp = useAmp()
     return(
         <>
         <ProjectsButton/>
