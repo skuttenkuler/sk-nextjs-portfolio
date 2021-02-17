@@ -14,10 +14,10 @@ const project = ({project}) => {
         <Meta title={project.title} description={project.description}/>
         <div className={styles.projectContainer}>
             <div className={styles.projectImage}>
-                {isAmp & project.deployed ? 
+                {project.deployed ? 
                     <Link href={project.deployed}>
                         <a>
-                            <amp-img
+                            <Image
                                 src={project.thumbnail}
                                 alt={project.title}
                                 width={1000}
@@ -26,12 +26,16 @@ const project = ({project}) => {
                         </a>
                     </Link>
                 :
-                <amp-img
-                src={project.thumbnail}
-                alt={project.title}
-                width={1000}
-                height={571}
-                 />
+                <Link href={project.code}>
+                        <a>
+                            <Image
+                                src={project.thumbnail}
+                                alt={project.title}
+                                width={1000}
+                                height={571}
+                            />
+                        </a>
+                    </Link>
                 }
             </div>
             <div className={styles.projectDetails}>

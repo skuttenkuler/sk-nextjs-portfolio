@@ -1,12 +1,9 @@
 import React, {useState} from 'react'
 import Image from 'next/image'
-import { useAmp } from 'next/amp'
-export const config = { amp: 'hybrid' }
 import HomeButton from '../components/HomeButton'
 import styles from '../styles/About.module.css'
 //import SkillsTables from '../components/SkillsTables';
 const About = ({}) => {
-    const isAmp = useAmp()
     const [text, setText] = useState("RESUME");
     const resumeLink = (text) => {
         //console.log("switched")
@@ -20,16 +17,6 @@ const About = ({}) => {
             </div>
 
             <div className={styles.picContainer}>
-                {isAmp ?
-                        <amp-img
-                        src="https://samkuttenk-resume.s3-us-west-1.amazonaws.com/aboutpic.png"
-                        id="aboutpic"
-                        alt="canvas"
-                        width={1920}
-                        height={1080}
-                        layout="responsive"
-                        />  
-                        :  
                         <Image
                         src="https://samkuttenk-resume.s3-us-west-1.amazonaws.com/aboutpic.png"
                         id="aboutpic"
@@ -37,8 +24,7 @@ const About = ({}) => {
                         width={1920}
                         height={1080}
                         layout="responsive"
-                        />  
-                }
+                        /> 
             </div>
             {/* <SkillsTables skills={skills}/> */}
             
