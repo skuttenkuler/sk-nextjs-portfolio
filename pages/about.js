@@ -1,5 +1,5 @@
 import React, {useState} from 'react'
-import {server} from '../config'
+
 import Image from 'next/image'
 import HomeButton from '../components/HomeButton'
 import styles from '../styles/About.module.css'
@@ -25,7 +25,7 @@ const About = ({}) => {
             <div className={styles.picContainer}>
                         <Image
                         id="aboutpic"
-                        src="/images/aboutpic.png"
+                        src="https://samkuttenk-resume.s3-us-west-1.amazonaws.com/aboutpic.png"
                         alt="canvas"
                         width={1920}
                         height={1080}
@@ -40,7 +40,7 @@ const About = ({}) => {
                     I have spent the last 4 years designing and developing applications for the web and mobile mediums. In 2020, I completed course 
                     work at the University of California, Berkely Bootcamp and recieved a certificate in Full Stack Web Development. 
                     <br/>&emsp;Creative and curious. Diligent and meticulous. Previously a proffesional musician, I brought my all to delivering experiances. 
-                    I bring that same passion and drive for user experience with every product I ship. I am an adamant pursuer and lover of tailering experiances and aim to leave a lasting impression with everyone that uses my applications.
+                    I bring that same passion and drive for user experience with every product I ship. I am an adamant pursuer and lover of tailering memories and moments while aiming to leave lasting impressions with everyone that uses my apps.
                     I pride myself on being a relentless problem solver and voracious learner. 
                     Every product I build and ship is carefully planned, developed, and designed to give the user the exact experiance my client aims to give from the tech stack to the UX/UI.
                     I have been successful in this approach being a detail oriented programmer while remaining in a big picture mindset. If you have an idea for an application, please visit my contact page and let's build something great.       

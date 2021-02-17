@@ -117,12 +117,29 @@ ul { padding:0 }
     box-shadow: rgba(0,0,0,0.8) 0 0 10px;
 }
 
+#letter{
+    color:white;
+    position: relative;
+    margin-bottom:50px;
+    transform: scale(5);
+    animation: 1s ease-out 0s 1 slideInFromLeft;
+}
+@keyframes slideInFromLeft {
+    0% {
+      transform: translateX(-10000%);
+    }
+    100% {
+      transform: translateX(0);
+    }
+  }
+
 
 @media screen and (max-width: 600px){
 .p-details ul{
     opacity: 1;
     
 }
+
 #project-title, #article-title{
     font-size: 4rem;
 }

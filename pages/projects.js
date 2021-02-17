@@ -4,7 +4,7 @@ import HomeButton from '../components/HomeButton'
 import Testimonials from '../components/Testimonials'
 
 const Projects = ({projects, testimonials}) => {
-    console.log([projects,testimonials])
+    //console.log([projects,testimonials])
     return(
         <>
         <HomeButton/>
