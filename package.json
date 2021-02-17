@@ -4,8 +4,7 @@
   "private": true,
   "scripts": {
     "dev": "next dev",
-    "build": "next build",
-    "postbuild": "next-on-netlify",
+    "build": "next build && next export",
     "start": "next start"
   },
   "dependencies": {
@@ -14,7 +13,6 @@
     "@fortawesome/react-fontawesome": "^0.1.14",
     "moment": "^2.29.1",
     "next": "^10.0.6",
-    "next-on-netlify": "^2.8.7",
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "sass": "^1.32.6"
