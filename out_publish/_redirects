@@ -1,13 +1,13 @@
 # Next-on-Netlify Redirects
-/_next/data/7vpJnoJBHiwqe51DyWG99/blog.json  /.netlify/functions/next_blog  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/1.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/2.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/3.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/4.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/5.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/6.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/project/7.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
-/_next/data/7vpJnoJBHiwqe51DyWG99/projects.json  /.netlify/functions/next_projects  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/blog.json  /.netlify/functions/next_blog  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/1.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/2.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/3.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/4.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/5.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/6.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/project/7.json  /.netlify/functions/next_project_id  200!  Cookie=__prerender_bypass,__next_preview_data
+/_next/data/SvgegPpgNzTFQxeboN1Iv/projects.json  /.netlify/functions/next_projects  200!  Cookie=__prerender_bypass,__next_preview_data
 /api/projects  /.netlify/functions/next_api_projects  200
 /api/skills  /.netlify/functions/next_api_skills  200
 /api/testimonials  /.netlify/functions/next_api_testimonials  200

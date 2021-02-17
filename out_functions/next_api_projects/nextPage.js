@@ -88,7 +88,7 @@ module.exports =
 /******/
 /******/
 /******/ 	// Load entry module and return exports
-/******/ 	return __webpack_require__(__webpack_require__.s = "nBW3");
+/******/ 	return __webpack_require__(__webpack_require__.s = "woTx");
 /******/ })
 /************************************************************************/
 /******/ ({
@@ -2129,41 +2129,41 @@ exports.__esModule=true;exports.interopDefault=interopDefault;exports.loadCompon
 /* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return projects; });
 const projects = [{
   id: 1,
-  title: 'Falcon Heavy',
-  deployed: '//immense-beyond-39985.herokuapp.com',
-  code: '//www.github.com/skuttenkuler/FalconHeavy',
-  thumbnail: '/images/projects/falconheavy.png',
-  tech: ["React", "TypeScript", "Redux", "Node", "Firebase"],
-  description: "Explore SpaceX rocket data."
+  title: 'Payroll & Picks',
+  deployed: '//payrollandpicks.com',
+  code: '//github.com/skuttenkuler/payrollandpicks',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/payrollandpicks.png',
+  tech: ["Next.js", "TypeScript", "PostgreSQL", "GraphQL"],
+  description: "NBA salary cap and fantasy drafts"
 }, {
   id: 2,
   title: 'Star Social',
   deployed: '//samkuttenk2.pythonanywhere.com/',
   code: '//www.github.com/skuttenkuler/StarSocial/',
-  thumbnail: '/images/projects/starsocial.png',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/StarSocial.png',
   tech: ["Django", "HTML", "CSS", "Javascript"],
   description: "Space related social media application."
 }, {
   id: 3,
-  title: 'Payroll & Picks',
-  deployed: '//payrollandpicks.com',
-  code: '//github.com/skuttenkuler/payrollandpicks',
-  thumbnail: '/images/projects/payrollandpicks.png',
-  tech: ["Next.js", "TypeScript", "PostgreSQL", "GraphQL"],
-  description: "NBA salary cap and fantasy drafts"
+  title: 'Falcon Heavy',
+  deployed: '//immense-beyond-39985.herokuapp.com',
+  code: '//www.github.com/skuttenkuler/FalconHeavy',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/falconheavy.png',
+  tech: ["React", "TypeScript", "Redux", "Node", "Firebase"],
+  description: "Explore SpaceX rocket data."
 }, {
   id: 4,
   title: 'James C. Burns',
   deployed: '//jamescburns.com',
   code: '//www.github.com/skuttenkuler/JamesCBurns',
-  thumbnail: '/images/projects/jamescburns.png',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/jamescburns.png',
   tech: ["React", "CSS"],
   description: "Actor Portfolio"
 }, {
   id: 5,
   title: 'Music Store',
   code: '//www.github.com/skuttenkuler/Music-Store-CPP',
-  thumbnail: '/images/projects/musicstore.png',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/musicstore.png',
   tech: ["C++", "MySQL"],
   description: "Music Store Management System"
 }, {
@@ -2171,7 +2171,7 @@ const projects = [{
   title: 'Hacker Terminal',
   deployed: '//samkuttenk2.pythonanywhere.com/',
   code: '//www.github.com/skuttenkuler/HackerTerminalGame',
-  thumbnail: '/images/projects/hackerterminal.png',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/hackerterminal.png',
   tech: ["Unity", "C#"],
   description: "Unity Game"
 }, {
@@ -2179,7 +2179,7 @@ const projects = [{
   title: 'Book Store',
   deployed: '//still-earth-60188.herokuapp.com/',
   code: '//github.com/skuttenkuler/Book-Store',
-  thumbnail: '/images/projects/bookstore.png',
+  thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/bookstore.png',
   tech: ["React", "Node.js", "MongoDB"],
   description: "Google API Book Store"
 }];
@@ -9194,51 +9194,6 @@ module.exports = require("fs");
 
 /***/ }),
 
-/***/ "nBW3":
-/***/ (function(module, __webpack_exports__, __webpack_require__) {
-
-"use strict";
-__webpack_require__.r(__webpack_exports__);
-/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
-/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
-/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
-/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
-var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
-/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
-
-        
-      const { processEnv } = __webpack_require__("fXeI")
-      processEnv([])
-    
-        
-        const runtimeConfig = {}
-        
-        
-        
-        
-  
-        
-  
-        const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
-          pageModule: __webpack_require__("lsDM"),
-          rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
-          i18n: undefined,
-          page: "/api/projects",
-          basePath: "",
-          pageIsDynamic: false,
-          encodedPreviewProps: {previewModeId:"6b9d623733c7ce3a0c39ec2f83edd5ed",previewModeSigningKey:"6931878b034502b4c37a03f188e9428c9eb27fe347f4ad408038d68d9dd917b7",previewModeEncryptionKey:"e21d80699fee887533c6cfaa8f868a96f631ca3e5c2226e1e2f1d0c2139873d6"},
-          experimental: {
-            onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
-            initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
-          }
-        })
-        /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
-      
-
-/***/ }),
-
 /***/ "oyvS":
 /***/ (function(module, exports) {
 
@@ -10127,6 +10082,51 @@ exports.OPTIMIZED_FONT_PROVIDERS = OPTIMIZED_FONT_PROVIDERS;
 "use strict";
 exports.__esModule=true;exports.normalizePathSep=normalizePathSep;exports.denormalizePagePath=denormalizePagePath;function normalizePathSep(path){return path.replace(/\\/g,'/');}function denormalizePagePath(page){page=normalizePathSep(page);if(page.startsWith('/index/')){page=page.slice(6);}else if(page==='/index'){page='/';}return page;}
 //# sourceMappingURL=denormalize-page-path.js.map
+
+/***/ }),
+
+/***/ "woTx":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+__webpack_require__.r(__webpack_exports__);
+/* harmony import */ var next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__("GX0O");
+/* harmony import */ var next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__ = __webpack_require__("KqAr");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__ = __webpack_require__("fkL1");
+/* harmony import */ var next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2___default = /*#__PURE__*/__webpack_require__.n(next_dist_next_server_server_node_polyfill_fetch__WEBPACK_IMPORTED_MODULE_2__);
+/* harmony import */ var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__ = __webpack_require__("Skye");
+var private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3___namespace = /*#__PURE__*/__webpack_require__.t("Skye", 1);
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__ = __webpack_require__("CpcB");
+/* harmony import */ var next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4___default = /*#__PURE__*/__webpack_require__.n(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__);
+
+        
+      const { processEnv } = __webpack_require__("fXeI")
+      processEnv([])
+    
+        
+        const runtimeConfig = {}
+        
+        
+        
+        
+  
+        
+  
+        const apiHandler = Object(next_dist_build_webpack_loaders_next_serverless_loader_api_handler__WEBPACK_IMPORTED_MODULE_4__["getApiHandler"])({
+          pageModule: __webpack_require__("lsDM"),
+          rewrites: private_dot_next_routes_manifest_json__WEBPACK_IMPORTED_MODULE_3__.rewrites,
+          i18n: undefined,
+          page: "/api/projects",
+          basePath: "",
+          pageIsDynamic: false,
+          encodedPreviewProps: {previewModeId:"b7bae04947b179de25a7f8db9dac81ac",previewModeSigningKey:"1afb48ca01bb7c5d30c89352c0794a9e925b54c04f50ecfdf2b14d6c6d391128",previewModeEncryptionKey:"c8785b7852bf4978212a051b7e5be20673b936e57de61de848ecb91ad2daee7f"},
+          experimental: {
+            onError: next_plugin_loader_middleware_on_error_server___WEBPACK_IMPORTED_MODULE_1__["default"],
+            initServer: next_plugin_loader_middleware_on_init_server___WEBPACK_IMPORTED_MODULE_0__["default"],
+          }
+        })
+        /* harmony default export */ __webpack_exports__["default"] = (apiHandler);
+      
 
 /***/ }),
 

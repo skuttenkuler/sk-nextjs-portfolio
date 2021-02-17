@@ -15,22 +15,32 @@ const project = ({project}) => {
             <div className={styles.projectImage}>
                 {project.deployed ? 
                     <Link href={project.deployed}>
-                        <a>
-                            <Image
-                                src={project.thumbnail}
-                                alt={project.title}
-                                width={1000}
-                                height={571}
-                            />
+                        <a id="pic"> 
+
+                        
+                        <style jsx>{
+                            `#pic{
+                                content: url(${project.thumbnail});
+                                width:1000;
+                                hieght:971;
+                            }`
+                        }</style>
                         </a>
                     </Link>
                 :
-                <Image
-                src={project.thumbnail}
-                alt={project.title}
-                width={1000}
-                height={571}
-                 />
+                <Link href={project.code}>
+                        <a id="pic"> 
+                        
+                        <style jsx>{
+                            `#pic{
+                                content: url(${project.thumbnail});
+                                width:1000;
+                                hieght:971;
+                                
+                            }`
+                        }</style>
+                        </a>
+                    </Link>
                 }
             </div>
             <div className={styles.projectDetails}>
