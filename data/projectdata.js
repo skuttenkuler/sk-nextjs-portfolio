@@ -4,7 +4,7 @@ export const projects = [
         title: 'Payroll & Picks',
         deployed: '//payrollandpicks.com',
         code: '//github.com/skuttenkuler/payrollandpicks',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/payrollandpicks.png',
+        thumbnail: '/images/projects/payrollandpicks.png',
         tech: ["Next.js","TypeScript","PostgreSQL","GraphQL"],
         description: "NBA salary cap and fantasy drafts"
     },
@@ -13,7 +13,7 @@ export const projects = [
         title: 'Star Social',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/StarSocial/',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/StarSocial.png',
+        thumbnail: '/images/projects/StarSocial.png',
         tech: ["Django","HTML","CSS","Javascript"],
         description: "Space related social media application."
     },
@@ -22,7 +22,7 @@ export const projects = [
         title: 'Falcon Heavy',
         deployed: '//immense-beyond-39985.herokuapp.com',
         code: '//www.github.com/skuttenkuler/FalconHeavy',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/falconheavy.png',
+        thumbnail: '/images/projects/falconheavy.png',
         tech: ["React","TypeScript","Redux","Node","Firebase"],
         description: "Explore SpaceX rocket data."
     },
@@ -31,7 +31,7 @@ export const projects = [
         title: 'James C. Burns',
         deployed: '//jamescburns.com',
         code: '//www.github.com/skuttenkuler/JamesCBurns',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/jamescburns.png',
+        thumbnail: '/images/projects/jamescburns.png',
         tech: ["React","CSS"],
         description: "Actor Portfolio"
     },
@@ -39,7 +39,7 @@ export const projects = [
         id: 5,
         title: 'Music Store',
         code: '//www.github.com/skuttenkuler/Music-Store-CPP',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/musicstore.png',
+        thumbnail: '/images/projects/musicstore.png',
         tech: ["C++","MySQL"],
         description: "Music Store Management System"
     },
@@ -48,7 +48,7 @@ export const projects = [
         title: 'Hacker Terminal',
         deployed: '//samkuttenk2.pythonanywhere.com/',
         code: '//www.github.com/skuttenkuler/HackerTerminalGame',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/hackerterminal.png',
+        thumbnail: '/images/projects/hackerterminal.png',
         tech: ["Unity","C#"],
         description: "Unity Game"
     },
@@ -57,7 +57,7 @@ export const projects = [
         title: 'Book Store',
         deployed: '//still-earth-60188.herokuapp.com/',
         code: '//github.com/skuttenkuler/Book-Store',
-        thumbnail: 'https://samkuttenk-resume.s3-us-west-1.amazonaws.com/bookstore.png',
+        thumbnail: '/images/projects/bookstore.png',
         tech: ["React","Node.js","MongoDB"],
         description: "Google API Book Store"
     },

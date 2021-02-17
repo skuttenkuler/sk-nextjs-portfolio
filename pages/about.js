@@ -18,7 +18,7 @@ const About = ({}) => {
 
             <div className={styles.picContainer}>
                         <Image
-                        src="https://samkuttenk-resume.s3-us-west-1.amazonaws.com/aboutpic.png"
+                        src="/images/aboutpic.png"
                         id="aboutpic"
                         alt="canvas"
                         width={1920}
