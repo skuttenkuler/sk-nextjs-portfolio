@@ -11,7 +11,7 @@ const ProjectLink = ({project}) => {
                 <a className={styles.project}>
                     <h4 id="project-title"className={styles.projectTitle}>{project.title}</h4>
                 <div className="p-details"id="project-details">
-                    <ul key={project.id}id={project.id} className={styles.techlist}>
+                    <ul key={project.id} id={project.id} className={styles.techlist}>
                     {project.tech.map((t,i) => (
                         <li key={i} className={styles.techList}>{t}</li>
                     ))}

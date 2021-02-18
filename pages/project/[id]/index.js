@@ -1,4 +1,5 @@
 import {server} from '../../../config/index'
+import {projects} from '../../../data/projectdata'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
@@ -6,6 +7,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const project = ({project}) => {
+    console.log(project)
     return(
         <>
         <ProjectsButton/>
@@ -68,7 +70,7 @@ const project = ({project}) => {
 
     )
 }
-//get props
+///get props
 export const getStaticProps = async (context) => {
     const res = await fetch(`${server}/api/projects/${context.params.id}`)
   
