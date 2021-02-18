@@ -6,7 +6,7 @@ import Image from 'next/image'
 import Link from 'next/link'
 
 const project = ({project}) => {
-    console.log(project)
+    // console.log(project)
     return(
         <>
         <ProjectsButton/>
@@ -84,7 +84,7 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/projects`)
     const projects = await res.json()
-    console.log(projects)
+    // console.log(projects)
     const ids = projects.map((project) => project.id)
     const paths = ids.map((id) => ({params: {id: id.toString()}}))
     

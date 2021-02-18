@@ -1,7 +1,7 @@
 import ArticleList from '../components/ArticleList'
 import HomeButton from '../components/HomeButton'
 const Blog = ({articles}) => {
-    console.log(articles)
+    // console.log(articles)
     return(
         <>
         <HomeButton/>
