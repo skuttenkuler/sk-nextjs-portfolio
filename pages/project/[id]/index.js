@@ -1,5 +1,4 @@
 import {server} from '../../../config/index'
-import {projects} from '../../../data/projectdata'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
@@ -85,6 +84,7 @@ export const getStaticProps = async (context) => {
 export const getStaticPaths = async () => {
     const res = await fetch(`${server}/api/projects`)
     const projects = await res.json()
+    console.log(projects)
     const ids = projects.map((project) => project.id)
     const paths = ids.map((id) => ({params: {id: id.toString()}}))
     
