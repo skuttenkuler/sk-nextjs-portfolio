@@ -1,3 +1,3 @@
 const dev = process.env.NODE_ENV !== 'production'
 
-export const server =dev ? 'http://localhost:3000': 'https://samkuttenkuler.netlify.app'
+export const server =dev ? 'http://localhost:3000': 'https://stormy-everglades-47392.herokuapp.com'
