@@ -1,25 +1,49 @@
-
+import React, {useState} from "react"
+import axios from 'axios'
 import styles from '../styles/Form.module.css'
+
 const ContactForm = () => {
-    
+    const [contactInputs, setContactInputs] = useState({ name: '', 
+                                                         email: '', 
+                                                         message: ''
+    });
+
+    const handleChange = (e) => {
+        setContactInputs({...contactInputs, [e.target.name]: e.target.value})
+    };
+
+    const handleSubmit = (e) => {
+        e.preventDefault()
+        axios.post(URL, contactInputs, {
+            dataType: "json",
+            crossDomain: "true",
+            contentType: "application/json; charset=utf-8",
+            data: JSON.stringify(contactInputs),
+        })
+          .then(function (response) {
+              console.log(response)
+          })
+          .catch(function (error) {
+              console.log(error)
+          }) 
+        }
+
         return(
-            <form className={styles.form} name="contact" action="/success" method="POST" data-netlify="true">
-                <p >
-                    <input className={styles.name} type="text" id="name" name="fname" onChange={e => setName(e.target.value)} placeholder="Name.." />
+            <form className={styles.form} onSubmit={handleSubmit} name="contact" action="/success" method="POST">
+                <p>
+                    <input className={styles.name} type="text" id="name" name="name" value={contactInputs.name} placeholder="Name.." onChange={handleChange} required/>
                 </p>
-                <p >
-                    <input className={styles.email} type="text" id="email" name="email" onChange={e => setEmail(e.target.value)} placeholder="Email.." />
+                <p>
+                    <input className={styles.email} type="text" id="email" name="email" value={contactInputs.email} placeholder="Email.." onChange={handleChange} required/>
                 </p>
-                <p >
-                    <textarea className={styles.message} id="message" name="message" onChange={e => setMessage(e.target.value)} placeholder="What do you want to build?"></textarea>
-                </p>z
-                <p >
-                    <button className={styles.sendButton} type="submit">Send</button>
+                <p>
+                    <textarea className={styles.message} id="message" name="message" value={contactInputs.message} placeholder="What do you want to build?" onChange={handleChange} required></textarea>
+                </p>
+                <p>
+                    <button className={styles.sendButton}>Send</button>
                 </p>
             </form>
       
         )
     }
-
-
 export default ContactForm;
