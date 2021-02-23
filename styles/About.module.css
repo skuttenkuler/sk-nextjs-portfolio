@@ -20,6 +20,10 @@
     margin-top:450px;
     right:0;
 }
+.picContainer img {
+    width: 100%;
+    height: auto;
+}
 .aboutContainer{
     position: absolute;
     margin-top:1000px;

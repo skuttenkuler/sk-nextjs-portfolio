@@ -1,8 +1,8 @@
 import React, {useState} from 'react'
-import Image from 'next/image'
 import HomeButton from '../components/HomeButton'
 import styles from '../styles/About.module.css'
 //import SkillsTables from '../components/SkillsTables';
+
 const About = ({}) => {
     const [text, setText] = useState("RESUME");
     const resumeLink = (text) => {
@@ -17,13 +17,11 @@ const About = ({}) => {
             </div>
 
             <div className={styles.picContainer}>
-                        <Image
-                        src="https://samkuttenk-resume.s3-us-west-1.amazonaws.com/aboutpic.png"
+                        <img
+                        src="/static/aboutpic.png"
                         id="aboutpic"
                         alt="canvas"
-                        width={1920}
-                        height={1080}
-                        layout="responsive"
+                        className="responsive"
                         /> 
             </div>
             {/* <SkillsTables skills={skills}/> */}
@@ -40,7 +38,7 @@ const About = ({}) => {
                     I have been successful in this approach being a detail oriented programmer while remaining in a big picture mindset. If you have an idea for an application, please visit my contact page and let's build something great.       
                 <br/>
                 <br/>
-                <a id="pdf" href="/images/Resume_SamKuttenkuler.pdf"download onMouseEnter={() => resumeLink("DOWNLOAD") } onMouseLeave={() => resumeLink("RESUME")}>{text}.</a>
+                <a id="pdf" href="/static/Resume_SamKuttenkuler.pdf"download onMouseEnter={() => resumeLink("DOWNLOAD") } onMouseLeave={() => resumeLink("RESUME")}>{text}.</a>
                 </p>
                 
             </div>

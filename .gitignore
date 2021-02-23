@@ -15,7 +15,7 @@
 /out_functions/
 # production
 /build
-
+AWSCLIV2.pkg
 # misc
 .DS_Store
 *.pem

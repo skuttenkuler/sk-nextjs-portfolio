@@ -11,6 +11,6 @@ export const testimonials = [
         name: "Kerwin Hy",
         role: "System Developer, Aible",
         body:"Sam is smart, innovative, and highly resourceful. He has met every challenge presented to him head on in individual and team environments. He not only strives to improve his coding foundation, but he has mentored and helped others as well. His strong understanding of coding algorithms and ability to quickly learn new frameworks/libraries will make him a valuable asset on any team.",
-        thumbnail:"https://avatars0.githubusercontent.com/u/32748495?s=460&u=6b06230e17939dfcc29d9419aa480b995807ef43&v=4",       
+        thumbnail:"/static/kerwin.png",       
     }
 ]

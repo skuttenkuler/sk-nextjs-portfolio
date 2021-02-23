@@ -2,7 +2,6 @@ import {server} from '../../../config/index'
 import Meta from '../../../components/Meta'
 import ProjectsButton from '../../../components/ProjectsButton'
 import styles from '../../../styles/Project.module.css'
-import Image from 'next/image'
 import Link from 'next/link'
 
 const project = ({project}) => {
@@ -16,22 +15,19 @@ const project = ({project}) => {
                 {project.deployed ? 
                     <Link href={project.deployed}>
                         <a>
-                            <Image
+                            <img
                                 src={project.thumbnail}
                                 alt={project.title}
-                                width={1000}
-                                height={571}
+                                className="responsive"
                             />
                         </a>
                     </Link>
                 :
                 <Link href={project.code}>
                         <a>
-                            <Image
+                            <img
                                 src={project.thumbnail}
                                 alt={project.title}
-                                width={1000}
-                                height={571}
                             />
                         </a>
                     </Link>

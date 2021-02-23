@@ -1,5 +1,5 @@
 import Link from "next/link";
-import Image from "next/image"
+
 const Testimonials = ({testimonials}) => {
 return(
     <>
@@ -8,7 +8,7 @@ return(
                 <div className="slides">
                     {testimonials.map((slide, i) => (
                     <div key={i} name={"slide-" + slide.id} id={"slide-" + slide.id}>
-                        <Image
+                        <img
                             id="slide-image"
                             src={slide.thumbnail}
                             alt="{Picture of the author}"

@@ -9,7 +9,9 @@ body {
   overflow-x: hidden;
   background-color: #000;
 }
-
+::-webkit-scrollbar{
+  background-color:#000;
+}
 a {
   color: inherit;
   text-decoration: none;

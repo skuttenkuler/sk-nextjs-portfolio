@@ -13,6 +13,8 @@
 }
 .projectImage img{
     background-position:bottom;
+    width:100%;
+    height: auto;
 }
 .projectImage img:hover{
     transform:scale(1.01);
