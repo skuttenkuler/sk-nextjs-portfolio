@@ -13,7 +13,7 @@ const About = ({}) => {
         <div className={styles.aboutPage}>
             <HomeButton/>
             <div className={styles.header}>
-                <h1>I design and create digital experiances.</h1>
+                <h1>I design and create digital experiences.</h1>
             </div>
 
             <div className={styles.picContainer}>
