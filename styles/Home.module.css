@@ -2,6 +2,7 @@
 .homeContainer{
   height: 100vh;
   width:100%;
+  z-index: 999999;
   background-image: url('https://samkuttenk-resume.s3-us-west-1.amazonaws.com/bw-sk-full.png');
   background-size: cover;
   background-repeat: no-repeat;

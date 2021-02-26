@@ -18,11 +18,13 @@
     width:75vw;
     position: absolute;
     margin-top:450px;
-    right:0;
+    right:0 !important;
+    
 }
 .picContainer img {
     width: 100%;
     height: auto;
+    
 }
 .aboutContainer{
     position: absolute;

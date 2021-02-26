@@ -1,11 +1,12 @@
 .navContainer{
+    width:60%;
     padding:10px;
     display: inline-block;
     justify-content: center;
     align-items: center;
     position: absolute;
     top:150px;
-    right:100px;
+    right:0;
     transition-timing-function: ease;
 }
 @media only screen and (max-width: 600px) {

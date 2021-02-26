@@ -11,8 +11,8 @@ const ArticleLink = ({article, key}) => {
     
     return (
         <div key={key} className="articles">
-            <Link href={article.link}>
-                <a className={styles.article}>
+            <Link href="">
+                <a className={styles.article} onClick={() => window.open(`${article.link}`, '_blank')}>
                     <h4 id="article-title" className={styles.articleTitle}>{article.title}</h4>
                 <div className="p-details"id="article-details">
                     
