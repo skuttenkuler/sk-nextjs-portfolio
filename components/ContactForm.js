@@ -15,25 +15,24 @@ const ContactForm = () => {
         setContactInputs({...contactInputs, [e.target.name]: e.target.value})
     };
 
-    const handleSubmit = (e) => {
+    const handleSubmit = (e) =>  {
         e.preventDefault()
-        //console.log(JSON.stringify(contactInputs))
+        console.log(contactInputs)
         axios.post(URL, contactInputs, {
             dataType: "json",
             crossDomain: "true",
             contentType: "application/json; charset=utf-8",
             data: JSON.stringify(contactInputs),
         })
-          .then(function (response) {
-              console.log(response)
-              router.push("/success", undefined, { shallow: true })
-             
+        .then(function(response) {
+            console.log(response.data);
+            router.push("/success")
           })
-          .catch(function (error) {
-              console.log(error)
-          }) 
-        }
-
+          .catch(function(error) {
+            console.log(error);
+        })
+    }
+    
         return(
             <form className={styles.form} onSubmit={handleSubmit} name="contact" href="/success" method="POST">
                 <p>
