@@ -1,8 +1,10 @@
 import React, {useState} from "react"
+import { useRouter } from 'next/router'
 import axios from 'axios'
 import styles from '../styles/Form.module.css'
 
 const ContactForm = () => {
+    const router = useRouter()
     const [contactInputs, setContactInputs] = useState({ name: '', 
                                                          email: '', 
                                                          message: ''
@@ -14,6 +16,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e) => {
         e.preventDefault()
+        //console.log(JSON.stringify(contactInputs))
         axios.post(URL, contactInputs, {
             dataType: "json",
             crossDomain: "true",
@@ -22,6 +25,8 @@ const ContactForm = () => {
         })
           .then(function (response) {
               console.log(response)
+              router.push("/success", undefined, { shallow: true })
+             
           })
           .catch(function (error) {
               console.log(error)
@@ -29,7 +34,7 @@ const ContactForm = () => {
         }
 
         return(
-            <form className={styles.form} onSubmit={handleSubmit} name="contact" action="/success" method="POST">
+            <form className={styles.form} onSubmit={handleSubmit} name="contact" href="/success" method="POST">
                 <p>
                     <input className={styles.name} type="text" id="name" name="name" value={contactInputs.name} placeholder="Name.." onChange={handleChange} required/>
                 </p>
