@@ -4,6 +4,7 @@ import axios from 'axios'
 import styles from '../styles/Form.module.css'
 
 const ContactForm = () => {
+    const URL = process.env.SESURL
     const router = useRouter()
     const [contactInputs, setContactInputs] = useState({ name: '', 
                                                          email: '', 
