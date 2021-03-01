@@ -13,24 +13,20 @@ const project = ({project}) => {
         <div className={styles.projectContainer}>
             <div className={styles.projectImage}>
                 {project.deployed ? 
-                    <Link href={project.deployed}>
-                        <a>
+                        <a onClick={() => window.open(`${project.deployed}`, '_blank')}>
                             <img
                                 src={project.thumbnail}
                                 alt={project.title}
                                 className="responsive"
                             />
                         </a>
-                    </Link>
                 :
-                <Link href={project.code}>
-                        <a>
+                        <a onClick={() => window.open(`${project.code}`, '_blank')}>
                             <img
                                 src={project.thumbnail}
                                 alt={project.title}
                             />
                         </a>
-                    </Link>
                 }
             </div>
             <div className={styles.projectDetails}>

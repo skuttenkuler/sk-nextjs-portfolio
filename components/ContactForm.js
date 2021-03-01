@@ -17,6 +17,7 @@ const ContactForm = () => {
 
     const handleSubmit = (e) =>  {
         e.preventDefault()
+        router.push("/success")
         console.log(contactInputs)
         axios.post(URL, contactInputs, {
             dataType: "json",
@@ -26,7 +27,7 @@ const ContactForm = () => {
         })
         .then(function(response) {
             console.log(response.data);
-            router.push("/success")
+            
           })
           .catch(function(error) {
             console.log(error);
