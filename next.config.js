@@ -7,5 +7,6 @@ module.exports = {
       loader: "imgix",
       path: "https://noop/",
     },
+    
   }
  

@@ -4,7 +4,14 @@ import axios from 'axios'
 import styles from '../styles/Form.module.css'
 
 const ContactForm = () => {
-    const URL = process.env.SESURL
+
+    // if(process.env.NEXT_PUBLIC_SES_URL) { 
+    //     console.log('It is set!'); 
+    // }
+    // else { 
+    //     console.log('No set!'); 
+    // }
+    const URL = process.env.NEXT_PUBLIC_SES_URL
     const router = useRouter()
     const [contactInputs, setContactInputs] = useState({ name: '', 
                                                          email: '', 
@@ -15,18 +22,19 @@ const ContactForm = () => {
         setContactInputs({...contactInputs, [e.target.name]: e.target.value})
     };
 
-    const handleSubmit = (e) =>  {
+    async function handleSubmit(e) {
         e.preventDefault()
-        router.push("/success")
-        console.log(contactInputs)
-        axios.post(URL, contactInputs, {
+        
+        const data = JSON.stringify(contactInputs)
+        await axios.post(URL, data, {
             dataType: "json",
             crossDomain: "true",
             contentType: "application/json; charset=utf-8",
-            data: JSON.stringify(contactInputs),
+            data: data,
         })
         .then(function(response) {
-            console.log(response.data);
+            router.push("/success")
+            console.log(response.statusText, response.status,response.data);
             
           })
           .catch(function(error) {

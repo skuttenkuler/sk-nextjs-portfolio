@@ -3,9 +3,9 @@ export const projects = [
         id: 1,
         title: 'Payroll & Picks',
         deployed: '//payrollandpicks.com',
-        code: '//github.com/skuttenkuler/payrollandpicks',
+        code: '//github.com/skuttenkuler/PayrollandPicks',
         thumbnail: '/static/payrollandpicks.png',
-        tech: ["Next.js","TypeScript","PostgreSQL","GraphQL"],
+        tech: ["Next.js","Django","TypeScript","PostgreSQL","GraphQL", "CSS","Sass"],
         description: "NBA salary cap and fantasy drafts"
     },
     {
