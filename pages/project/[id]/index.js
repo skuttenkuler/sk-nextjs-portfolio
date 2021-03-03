@@ -38,7 +38,7 @@ const project = ({project}) => {
                 </ul>
                 <p className={styles.description}>{project.description}</p>
                 <ul className={styles.links}>
-                    <Link className={styles.github}href={project.code}>
+                    <Link className={styles.github} href="{project.code}">
                         <a id="icon">
                             <i className="fa fa-github"></i>
                         </a>
