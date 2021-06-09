@@ -38,11 +38,15 @@ const project = ({project}) => {
                 </ul>
                 <p className={styles.description}>{project.description}</p>
                 <ul className={styles.links}>
+                    {project.code ?
                     <Link className={styles.github} href="{project.code}">
                         <a id="icon">
                             <i className="fa fa-github"></i>
                         </a>
                     </Link>
+                    :
+                    <></>
+                    }
                     {project.deployed ? 
                         <Link className={styles.link}href={project.deployed}>
                             <a id="icon">
