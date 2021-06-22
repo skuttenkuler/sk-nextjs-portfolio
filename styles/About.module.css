@@ -81,10 +81,16 @@
     }
     }
     @media screen and (max-width: 600px){
-    
-     
+        .header{
+            left:25px;
+            top:100px;
+        }
+        .picContainer{
+            margin-top:150px;
+            width: 100vw;
+        }
         .aboutContainer{
-            margin-top:600px;
+            margin-top:350px;
         }
         
         }

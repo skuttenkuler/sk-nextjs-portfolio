@@ -11,7 +11,7 @@ const Resume = () => {
         <div className={styles.res}>
             <div id="resumelink"className={styles.resumeLink}>
                 <h3 className={styles.materialTitle}>Resume.</h3>
-            <a className={styles.links} href="/static/Resume_SamKuttenkuler.pdf"download >Download.</a>
+            <a id="download_link"className={styles.links} href="/static/Resume_SamKuttenkuler.pdf"download >Download.</a>
             </div>
         </div>
         <h2 className={styles.certHeader}>Certificates.</h2>

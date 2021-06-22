@@ -21,8 +21,9 @@
       display:block;
       color:#0049B7;
       font-size: 8vw;
-      display: flex;
-      justify-content: center;
-      align-items: center;
+      position: relative;
+      display:flex;
+      margin-right:0;
+      font-size:3rem;
     }
   }

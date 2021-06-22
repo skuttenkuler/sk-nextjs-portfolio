@@ -24,10 +24,27 @@
     margin-top:50px;
     margin-left: 25px;
   }
+  .article{
+    font-size:1.2rem;
+    margin-left: 5px;
+  }
   .date{
     font-size:1.2rem;
     margin-left: 5px;
   }
 }
 
-  
+@media screen and (max-width:600px){
+  .ProjectList {
+    margin-top:50px;
+    margin-left: 25px;
+  }
+  .projectDesc{
+    font-size:1.2rem;
+    margin-left: 5px;
+  }
+  .techlist li{
+    margin-right:10px;
+    font-size:1rem;
+  }
+}
