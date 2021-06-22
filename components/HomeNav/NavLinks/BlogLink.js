@@ -10,10 +10,14 @@ const BlogLink = () => {
         setText(text);
     }
     return(
-  
+        <>
             <div className={styles.navItem}onMouseEnter={() => blogLinkText("BLOG") } onMouseLeave={() => blogLinkText("I")}>
                 <Link href="/blog">{text}</Link>
             </div>
+            <div className={styles.mobileHomeLink}>
+                <Link href="/blog">BLOG</Link>
+            </div>
+        </>
     )
 }
  

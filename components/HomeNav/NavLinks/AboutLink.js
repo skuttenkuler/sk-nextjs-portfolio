@@ -10,11 +10,15 @@ const AboutLink = () => {
         setText(text);
     }
     return(
-  
+        <>
             <div className={styles.navItem} onMouseEnter={() => aboutText("ABOUT")} 
             onMouseLeave={() => aboutText("GOOD")}>
                 <Link href="/about">{text}</Link>
             </div>
+            <div className={styles.mobileHomeLink}>
+                <Link href="/about">ABOUT</Link>
+            </div>
+        </>
     )
 }
  

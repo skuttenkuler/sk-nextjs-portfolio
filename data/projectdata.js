@@ -23,7 +23,7 @@ export const projects = [
         code: '//www.github.com/skuttenkuler/JamesCBurns',
         thumbnail: '/static/jamescburns.png',
         tech: ["React","CSS"],
-        description: "Actor Portfolio"
+        description: "Actor Portfolio // Production Company"
     },
     {
         id: 4,

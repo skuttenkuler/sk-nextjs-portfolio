@@ -10,10 +10,14 @@ const ContactLink = () => {
         setText(text);
     }
     return(
-  
+        <>
             <div className={styles.navItem}  onMouseEnter={() => contactLinkText("CONTACT") } onMouseLeave={() => contactLinkText("AM")}>
                 <Link href="/contact">{text}</Link>
             </div>
+            <div className={styles.mobileHomeLink}>
+                <Link href="/contact">CONTACT</Link>
+            </div>
+        </>
     )
 }
  

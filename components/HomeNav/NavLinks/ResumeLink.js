@@ -10,10 +10,14 @@ const ResumeLink = () => {
         setText(text);
     }
     return(
-  
+        <>
             <div className={styles.navItem}onMouseEnter={() => resumeLinkText("RESUME") } onMouseLeave={() => resumeLinkText("SAM")}>
                 <Link href="/resume">{text}</Link>
             </div>
+            <div className={styles.mobileHomeLink}>
+                <Link href="/resume">RESUME</Link>
+            </div>
+        </>
     )
 }
  

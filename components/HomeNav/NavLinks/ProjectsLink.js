@@ -15,10 +15,14 @@ const ProjectsLink = () => {
         setText(text);
     }
     return(
-  
+        <>
             <div className={styles.navItem} onMouseEnter={() => aboutText("PROJECTS")} onMouseLeave={() => aboutText(greeting)}>
                 <Link href="/projects">{text}</Link>
             </div>
+            <div className={styles.mobileHomeLink}>
+                <Link href="/projects">PROJECTS</Link>
+            </div>
+        </>
     )
 }
  
