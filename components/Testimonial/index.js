@@ -1,6 +1,6 @@
 import Link from "next/link";
 
-const Testimonials = ({testimonials}) => {
+export const Testimonials = ({testimonials}) => {
 return(
     <>
     <div className="slider">

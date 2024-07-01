@@ -18,7 +18,7 @@ const Meta = ({title, keywords, description}) => {
 
 Meta.defaultProps = {
     title: 'Sam Kuttenkuler',
-    keywords: 'full stack, next.js, portfolio',
-    description: 'Sam Kuttenkuler Full Stack Developer Portfolio'
+    keywords: 'full stack, software engineer, developer, portfolio',
+    description: 'Sam Kuttenkuler Software Engineer Online Portfolio'
 }
 export default Meta;

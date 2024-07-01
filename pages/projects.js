@@ -1,23 +1,18 @@
-import {projects} from '../data/projectdata'
-import {testimonials} from '../data/testimonials'
-import ProjectsList from '../components/ProjectsList'
-import HomeButton from '../components/HomeButton'
-import Testimonials from '../components/Testimonials'
+import {projects} from '../data/data'
+import {PrevButton,WorkList} from '../components/'
 
-const Projects = ({projects, testimonials}) => {
-    //console.log([projects,testimonials])
+const Projects = ({projects}) => {
     return(
         <>
-        <HomeButton/>
-        <ProjectsList projects={projects}/>
-        <Testimonials testimonials={testimonials} />
+        <PrevButton prev="" page="Home."/>
+        <WorkList page="projects" data={projects}/>
         </>
         )
 };
 
 
 export async function getStaticProps() {
-    return { props: { projects, testimonials } }
+    return { props: { projects } }
   }
 
 export default Projects;

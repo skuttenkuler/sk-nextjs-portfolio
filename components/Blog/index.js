@@ -1,14 +1,12 @@
 import moment from 'moment'
 import Link from 'next/link'
-import styles from '../styles/Articles.module.css'
+import styles from '../../styles/Articles.module.css'
 
 
-const ArticleLink = ({article, key}) => {
-    //console.log(article.pubDate.toString())
+export const ArticleLink = ({article, key}) => {
     let time = article.pubDate
     let published = moment(time).format('MMMM Do YYYY')
 
-    
     return (
         <div key={key} className="articles">
             <Link href="">
@@ -24,4 +22,12 @@ const ArticleLink = ({article, key}) => {
             )
     }
 
-export default ArticleLink;
+export const ArticleList = ({articles}) => {
+    return(
+        <ul className={styles.ArticleList}>
+        {articles.items.map((article) => (
+                <ArticleLink article={article}/>
+            ))} 
+        </ul>
+    )
+}

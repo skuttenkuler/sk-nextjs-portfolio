@@ -1,5 +1,5 @@
-import ContactForm from "../components/ContactForm"
-import HomeButton from '../components/HomeButton'
+
+import {ContactForm,PrevButton} from '../components/'
 
 import styles from '../styles/Contact.module.css';
 
@@ -8,7 +8,7 @@ const Contact = () => {
    
     return(
         <>
-        <HomeButton/>
+        <PrevButton prev="" page="Home."/>
             <h1 className={styles.header}>Let's build something great.</h1>
             <div className={styles.contactContainer}>
                 <div className={styles.contactInfo}>

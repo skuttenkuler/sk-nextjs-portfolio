@@ -1,10 +1,8 @@
-import ArticleList from '../components/ArticleList'
-import HomeButton from '../components/HomeButton'
+import {ArticleList,PrevButton} from '../components/'
 const Blog = ({articles}) => {
-    // console.log(articles)
     return(
         <>
-        <HomeButton/>
+        <PrevButton prev="" page="Home"/>
         <ArticleList articles={articles}/>
         </>
         )

@@ -1,10 +1,10 @@
 import styles from '../styles/Home.module.css'
-import Nav from '../components/HomeNav/HomeNav'
+import {NavMain} from '../components'
 const Home = () => { 
     return (
       <div className={styles.homeContainer}>
         <div className={styles.container}>
-          <Nav/>
+          <NavMain/>
         </div>
       </div>
     )

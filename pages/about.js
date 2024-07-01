@@ -1,30 +1,24 @@
 import React, {useState} from 'react'
-import HomeButton from '../components/HomeButton'
+import {PrevButton} from '../components/Nav'
 import styles from '../styles/About.module.css'
-//import SkillsTables from '../components/SkillsTables';
 
-const About = ({}) => {
+const About = () => {
     const [text, setText] = useState("RESUME");
-    const resumeLink = (text) => {
-        //console.log("switched")
-        setText(text);
-    }
     return(
         <div className={styles.aboutPage}>
-            <HomeButton/>
+             <PrevButton prev="" page="Home."/>
             <div className={styles.header}>
                 <h1>I design and create digital experiences.</h1>
             </div>
 
             <div className={styles.picContainer}>
-                        <img
-                        src="/static/aboutpic.png"
-                        id="aboutpic"
-                        alt="canvas"
-                        className="responsive"
-                        /> 
+                <img
+                src="/static/aboutpic.png"
+                id="aboutpic"
+                alt="canvas"
+                className="responsive"
+                /> 
             </div>
-            {/* <SkillsTables skills={skills}/> */}
             
             <div className={styles.aboutContainer}>
                 <h3 className={styles.aboutText}>ABOUT</h3>
@@ -38,7 +32,7 @@ const About = ({}) => {
                     I have been successful in this approach being a detail oriented programmer while remaining in a big picture mindset. If you have an idea for an application, please visit my contact page and let's build something great.       
                 <br/>
                 <br/>
-                <a id="pdf" href="/static/Resume_SamKuttenkuler.pdf"download onMouseEnter={() => resumeLink("DOWNLOAD") } onMouseLeave={() => resumeLink("RESUME")}>{text}.</a>
+                <a id="pdf" href="/static/Resume_SamKuttenkuler.pdf"download onMouseEnter={() => setText("DOWNLOAD") } onMouseLeave={() => setText("RESUME")}>{text}</a>
                 </p>
                 
             </div>
@@ -46,16 +40,5 @@ const About = ({}) => {
     
     )       
 };
-// export const getStaticProps = async () => {
-//     const res = await fetch(`${server}/api/skills`)
-//     const skills = await res.json();
-    
-//     //return props object
-//     return{
-//         props: {
-//             skills
-//         }
-//     }
-// }
 
 export default About;

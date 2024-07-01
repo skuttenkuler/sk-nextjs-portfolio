@@ -1,4 +1,4 @@
-import React, {useState} from 'react'
+import React from 'react'
 import HomeButton from '../components/HomeButton'
 import styles from '../styles/Resume.module.css'
 

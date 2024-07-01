@@ -1,5 +1,5 @@
 import styles from '../styles/Success.module.css'
-import ContactButton from '../components/ContactButton'
+import ContactButton from '../components/Contact/ContactButton'
 
 export default function Success() {
     return (
